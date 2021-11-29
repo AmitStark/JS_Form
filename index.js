@@ -37,7 +37,7 @@ function validateForm() {
     }
 
     if (address.length == 0) {
-        seterror("name", "*Address cannot be empty!");
+        seterror("address", "*Address cannot be empty!");
         returnval = false;
     }
 
