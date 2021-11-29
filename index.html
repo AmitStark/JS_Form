@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1><u>JavsScript Form Validation</u></h1>
+    <form aciton="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="name">
+            First Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="address">
+            Address: <input type="text" name="faddress" required><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="zipcode">
+            Zip Code: <input type="number" name="fzipcode" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="state">
+            State:<select name="fstate" style="width: 50%;
+            padding: 12px 20px;
+            border: 1px solid blue;
+            margin: 14px;
+            border-radius: 4px;
+            font-size: 15px;">
+                <option>Select</option>
+                <option>Bihar</option>
+                <option>Jharkhand</option>
+                <option>Goa</option>
+                <option>Uttar Pradesh</option>
+            </select>
+        </div>
+
+        <div class="formdesign" id="username">
+            Username(6-8 characters): <input type="text" name="fusername" required><b><span class="formerror">
+                </span></b>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+        </div>
+
+
+        <input class="but" type="submit" value="Check Form">
+
+    </form>
+    <div class="footer">
+        <p>Amit Sharma  ---  2006143  ---  CS3403  ---  29th Nov/2021</p>
+      </div>
+</body>
+<script src="index.js"></script>
+
+</html>
